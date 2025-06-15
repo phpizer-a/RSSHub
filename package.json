@@ -21,7 +21,7 @@
         "lib"
     ],
     "scripts": {
-        "build": "tsx scripts/workflow/build-routes.ts",
+        "build": "tsx scripts/workflow/build-routes.ts && tsdown",
         "build:docs": "tsx scripts/workflow/build-docs.ts",
         "dev": "cross-env NODE_ENV=dev tsx watch --inspect --clear-screen=false lib/index.ts",
         "dev:cache": "cross-env NODE_ENV=production tsx watch --clear-screen=false lib/index.ts",
@@ -194,7 +194,7 @@
         "prettier": "3.5.3",
         "remark-parse": "11.0.0",
         "supertest": "7.1.1",
-        "tsdown": "0.12.7",
+        "tsdown": "^0.12.7",
         "typescript": "5.8.3",
         "unified": "11.0.5",
         "vite-tsconfig-paths": "5.1.4",
